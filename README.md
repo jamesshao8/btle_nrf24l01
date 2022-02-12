@@ -2,15 +2,15 @@
 send or receiver btle packet with nrf24l01
 
 Connection:
-nrf24l01 arduino
-VCC 	3.3V
-GND 	GND
-CE 	10
-CSN 	9
-SCK 	13
-MOSI 	11
-MISO 	12
-IRQ 	NC
+nrf24l01    arduino
+VCC   3.3V
+GND   GND
+CE    10
+CSN   9
+SCK   13
+MOSI    11
+MISO    12
+IRQ   NC
 
 Instruction:
 You need 2 sets of nrf24l01 and arduino(uno). Connect your nrf24l01 and arduino(uno) as in the table above.
