@@ -57,3 +57,10 @@ You can also verify it in the code send_simplifed, it's exactly the same data be
 
 Let's look into detail of the btle_tx command parameters. "0201060608534841524604ccaabbdd" is also known as INFO bit, which will then be encoded to PHY bit.
 You can modify "5348415246" in this parameter to other value, and decode with different name at receiver, or modify ccaabbdd to different data. But please don't modify their length.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+If you want to control your drone with hackrf, you can try the code in control_ymfc_mini_drone.
+
+You need a joystick+hackrf+computer(running linux) at sending side, and an arduino+nrf24l01+ymfc-mini-drone at receiving side.
+
+If you bought nano-rf to shrink arduino+nrf24l01, you can also try the code in nano_rf folder. There is a example for a quick test.
