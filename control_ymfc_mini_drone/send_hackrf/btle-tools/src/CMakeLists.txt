@@ -1,0 +1,17 @@
+set(INSTALL_DEFAULT_BINDIR "bin" CACHE STRING "Appended to CMAKE_INSTALL_PREFIX")
+
+
+add_executable(btle_tx btle_tx.cc)
+install(TARGETS btle_tx RUNTIME DESTINATION ${INSTALL_DEFAULT_BINDIR})
+
+include_directories(${LIBHACKRF_INCLUDE_DIR})
+LIST(APPEND TOOLS_LINK_LIBS ${LIBHACKRF_LIBRARIES})
+
+
+IF(NOT DEFINED C_INLINE)
+   ADD_DEFINITIONS("-Dinline=")
+ENDIF(NOT DEFINED C_INLINE)
+
+
+target_link_libraries(btle_tx ${TOOLS_LINK_LIBS} m)
+
